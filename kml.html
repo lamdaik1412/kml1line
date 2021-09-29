@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <title>KML Converter</title>
+</head>
+
+<body>
+    <div class="show"></div>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <h3><span class="badge badge-primary">Hệ thống xử lý file KML siêu cấp víp prồ</span></h3>
+    <form enctype="multipart/form-data" method="post" id="form">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' id="file" onchange="readURL(this);" accept=".KML" />
+            <div class="drag-text">
+                <h3>Kéo thả file *.KML vào đây hoặc nhấn vào để thêm ảnh</h3>
+            </div>
+        </div>
+    </form>
+    
+
+    <p style="padding-top:40px" class="text-center top_spac"> Create by <a target="_blank"
+            href="https://fb.com/live.love.n.lie">Lâm cute</a></p>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/script.js"></script>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="lineModalLabel"><u style="color: green;">Kết quả truy vấn</u> </h3> <button type="button" id="btn-copy" class="btn btn-default"><i class="fa fa-copy"></i></button>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                            class="sr-only">Close</span></button>
+
+                </div>
+                <div class="modal-body">
+
+                    <div id="result"></div>
+
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="javascript/notify.js"></script>
+
+</body>
+
+</html>
